@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Variables ──────────────────────────────────────────────────────── */
+:root {
+  --bg-primary: #0a0a1a;
+  --bg-secondary: #0d0d24;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --text-primary: #f0f0ff;
+  --text-secondary: #a5a5c0;
+  --text-muted: #666688;
+  --accent-primary: #5b58fa;
+  --accent-secondary: #d946ef;
+  --accent-glow: rgba(91, 88, 250, 0.4);
+  color-scheme: dark;
+}
+
+/* ─── Base Reset ─────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ─── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(91, 88, 250, 0.3);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(91, 88, 250, 0.6);
+}
+
+/* ─── Selection ──────────────────────────────────────────────────────────── */
+::selection {
+  background: rgba(91, 88, 250, 0.3);
+  color: #fff;
+}
+
+/* ─── Glassmorphism Components ───────────────────────────────────────────── */
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl;
+  }
+
+  .glass-card-hover {
+    @apply glass-card transition-all duration-300 hover:bg-white/10 hover:border-white/15 hover:shadow-lg;
+  }
+
+  .btn-primary {
+    @apply relative inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold text-white
+           bg-gradient-to-r from-cosmos-500 to-nebula-500
+           hover:from-cosmos-400 hover:to-nebula-400
+           active:scale-95
+           transition-all duration-200
+           shadow-lg shadow-cosmos-500/25
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 rounded-xl font-medium
+           border border-white/20 text-white/80
+           hover:bg-white/10 hover:border-white/30 hover:text-white
+           active:scale-95
+           transition-all duration-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl
+           bg-white/5 border border-white/15
+           text-white placeholder-white/30
+           focus:outline-none focus:ring-2 focus:ring-cosmos-500/50 focus:border-cosmos-500/50
+           transition-all duration-200
+           disabled:opacity-50;
+  }
+
+  .label-text {
+    @apply block text-sm font-medium text-white/70 mb-1.5;
+  }
+
+  .star-dot {
+    @apply absolute w-1 h-1 bg-white rounded-full opacity-60;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-cosmos-400 to-nebula-400 bg-clip-text text-transparent;
+  }
+
+  .glow-ring {
+    box-shadow: 0 0 0 1px var(--accent-primary), 0 0 20px var(--accent-glow);
+  }
+
+  /* Streaming cursor blink */
+  .stream-cursor::after {
+    content: "▋";
+    @apply text-cosmos-400 animate-pulse;
+  }
+
+  /* Markdown in chat */
+  .prose-astro {
+    @apply text-white/90 text-sm leading-relaxed;
+  }
+  .prose-astro h1, .prose-astro h2, .prose-astro h3 {
+    @apply text-white font-semibold mt-4 mb-2;
+  }
+  .prose-astro h1 { @apply text-xl; }
+  .prose-astro h2 { @apply text-lg; }
+  .prose-astro h3 { @apply text-base; }
+  .prose-astro p { @apply mb-3; }
+  .prose-astro ul { @apply list-disc list-inside space-y-1 mb-3; }
+  .prose-astro ol { @apply list-decimal list-inside space-y-1 mb-3; }
+  .prose-astro li { @apply text-white/85; }
+  .prose-astro strong { @apply text-white font-semibold; }
+  .prose-astro em { @apply text-nebula-300 italic; }
+  .prose-astro code {
+    @apply bg-white/10 text-cosmos-300 px-1.5 py-0.5 rounded text-xs font-mono;
+  }
+  .prose-astro blockquote {
+    @apply border-l-2 border-cosmos-500 pl-4 italic text-white/70 my-3;
+  }
+  .prose-astro hr {
+    @apply border-white/10 my-4;
+  }
+  .prose-astro a {
+    @apply text-cosmos-400 underline underline-offset-2 hover:text-cosmos-300;
+  }
+}
+
+/* ─── Star field animation ───────────────────────────────────────────────── */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50%       { opacity: 1;   transform: scale(1.5); }
+}
+
+.star-twinkle {
+  animation: twinkle var(--duration, 3s) ease-in-out infinite;
+  animation-delay: var(--delay, 0s);
+}
+
+/* ─── Message animations ─────────────────────────────────────────────────── */
+@keyframes messageSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message-enter {
+  animation: messageSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ─── Loading shimmer ────────────────────────────────────────────────────── */
+@keyframes shimmerMove {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+.shimmer-loader {
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0.05) 0%,
+    rgba(255,255,255,0.12) 50%,
+    rgba(255,255,255,0.05) 100%
+  );
+  background-size: 200% auto;
+  animation: shimmerMove 1.8s linear infinite;
+}
+
+/* ─── Nebula glow effects ────────────────────────────────────────────────── */
+.nebula-glow {
+  position: relative;
+}
+.nebula-glow::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #4640ef, #d946ef);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.nebula-glow:hover::before {
+  opacity: 0.6;
+  filter: blur(8px);
+}
+
+/* ─── Tool badge pulse ───────────────────────────────────────────────────── */
+@keyframes toolPulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(217, 70, 239, 0.4); }
+  50%       { box-shadow: 0 0 20px rgba(217, 70, 239, 0.8); }
+}
+
+.tool-badge-active {
+  animation: toolPulse 1.5s ease-in-out infinite;
+}

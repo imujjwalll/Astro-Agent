@@ -1,0 +1,85 @@
+{
+  "tc001": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc002": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc003": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc004": {
+    "Helpfulness": 1,
+    "Tone": 1,
+    "Groundedness": 1,
+    "Safety": 1,
+    "skipped": true
+  },
+  "tc005": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc006": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc007": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc008": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc009": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc010": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc011": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc012": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc013": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc014": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc015": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc016": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc017": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc018": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc019": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc020": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc021": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc022": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc023": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  },
+  "tc024": {
+    "Helpfulness": 1,
+    "Tone": 1,
+    "Groundedness": 1,
+    "Safety": 1,
+    "skipped": true
+  },
+  "tc025": {
+    "error": "Error: 404 No endpoints found for google/gemini-2.0-flash-exp:free.\n\nTroubleshooting URL: https://docs.langchain.com/oss/javascript/langchain/errors/MODEL_NOT_FOUND/\n"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "astro-agent",
+  "version": "1.0.0",
+  "description": "> An AI-powered astrology assistant using real Swiss Ephemeris planetary calculations, LangGraph agent orchestration, and streaming conversational AI.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "build": "npm run build --prefix backend && npm run build --prefix frontend",
+    "eval": "npx ts-node --project evals/tsconfig.json evals/runner.ts && npx ts-node --project evals/tsconfig.json evals/judge.ts && npx ts-node --project evals/tsconfig.json evals/validate_judge.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@langchain/openai": "^1.4.7",
+    "@types/node": "^25.9.1",
+    "dotenv": "^17.4.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  }
+}
